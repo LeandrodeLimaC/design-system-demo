@@ -1,0 +1,16 @@
+{
+  "name": "@ally/themes",
+  "version": "0.0.0",
+  "main": "dist/index.json",
+  "typings": "dist/index.d.ts",
+  "author": "LeandrodeLimaC",
+  "license": "MIT",
+  "scripts": {
+    "build": "token-transformer tokens/raw-tokens.json --resolveReferences=math ./tokens/input.json && style-dictionary build"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.27",
+    "typescript": "^4.8.4"
+  }
+}

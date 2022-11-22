@@ -1,5 +1,14 @@
 {
-  "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": false,
+    "importHelpers": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
+  },
+  "exclude": ["node_modules", ".storybook", ".turbo"]
 }
